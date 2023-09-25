@@ -24,7 +24,7 @@ div p{
 b, u{
     color:darkorange
 }
-
+/* Specific Selectors: .class #id */
 .important{
     color:red
 }
@@ -34,6 +34,31 @@ b, u{
 }
 
 #spec{
-    
+    color: blue !important;
 }
-/* Specific Selectors: .class #id */
+
+/* Pseudo classes 
+    Note: the order of pseudoclasses are important!
+    */
+    
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: black;
+}
+
+.actor{
+    border: 2px;
+    width: 200px;
+    height: auto;
+}

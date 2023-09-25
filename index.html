@@ -7,6 +7,11 @@
     <title>CSS</title>
     <!-- Create the "relation" between HTML and CSS files -->
     <link rel="stylesheet" href="./style.css" />
+    <style>
+      #spec {
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div>
@@ -27,5 +32,90 @@
     <p class="important">Important content goes here!</p>
     <p class="dotted">Dotted content goes here!</p>
     <p class="important dotted">Important and Dotted content goes here!</p>
+    <p style="color: green" id="spec">CSS Hierarchy Specified Element</p>
+    <br /><br />
+
+    <!-- Specific selection with pseudo classes -->
+    <a href="http://example1.com" target="_blank">Example 1</a>
+    <a href="http://example1.com" target="_blank">Example 2</a>
+    <a href="http://example1.com" target="_blank">Example 3</a>
+    <a href="http://example1.com" target="_blank">Example 4</a>
+    <br /><br /><br /><br />
+
+    <!-- Gyakorló feladat:
+      "Színész felsoroló"
+      - Hozz létre egy section element, amelyben négy div gyerek elem van
+      - Mind a 4 div elemben legyen egy kép elhelyezve
+      - Mindegyik kép MELLETT legyen róluk leírás (inline vs block)
+      - A képek formázása (CSS kódban)
+        - 2px szegély, egyenletes, szürke
+        - width: 200px, height: auto
+      - A képek a kedvenc színészeid ábrázolják, a leírás pedig róluk tartalmazzon információt. A leírásban legyen egy wikipedia link, amely a színész oldalára mutat
+    -->
+
+    <section>
+      <div>
+        <img
+          class="actor"
+          src="https://www.mafab.hu/static/profiles/2014p/293/04/273727_33.jpg"
+          alt="Mark Wahlberg"
+        />
+        <a>Mark Wahlberg</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Mark_Wahlberg"
+            >Mark Wahlberg</a
+          >
+          Oscar- és Golden Globe-díjra jelölt amerikai színész és televíziós
+          producer. Korábban Marky Mark néven vált ismertté 1991-es debütalbuma
+          révén, amin rapzenét adott elő a Marky Mark and the Funky Bunch
+          formációval.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dwayne_Johnson_2%2C_2013.jpg/800px-Dwayne_Johnson_2%2C_2013.jpg"
+          alt="Dwayne Johnson"
+        />
+        <a>Dwayne Johnson</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Dwayne_Johnson"
+            >Dwayne Douglas Johnson</a
+          >
+          szamoai származású amerikai színész, producer, üzletember, testépítő
+          és visszavonult profi pankrátor.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://flxt.tmsimg.com/assets/57282_v9_bb.jpg"
+          alt="Ryan Reynolds"
+        />
+        <a>Ryan Reynolds</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Ryan_Reynolds"
+            >Ryan Rodney Reynolds</a
+          >
+          kanadai-amerikai színész, humorista, filmproducer és forgatókönyvíró.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://cdn.britannica.com/97/194197-050-5BD88874/Vin-Diesel-The-Fast-and-the-Furious.jpg"
+          alt="Vin Diesel"
+        />
+        <a>Vin Diesel</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Vin_Diesel">Vin Diesel</a>
+          amerikai színész, producer és forgatókönyvíró. Szeret a vásznon igazi
+          „keményfiúkat” alakítani, de a drámai szerepek sem állnak messze tőle.
+        </p>
+      </div>
+    </section>
   </body>
 </html>
