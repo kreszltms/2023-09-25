@@ -1,0 +1,162 @@
+<!-- 
+    1. gyakorló feladat: Ki kell egészíteni az órai gyakorló feladatot az alábbiakkal:
+    "Színész" felsoroló
+        - Hozz létre egy section elemet, amelyben négy div gyermek elem van
+        - Mind a 4 div elemben legyen egy kép elhelyezve
+        - Mindegyik kép MELLETT legyen róluk leírás (inline vs block)
+        - A képek formázása (CSS kódban)
+            - 2px szegély, egyenletes, szürke
+            - width: 200px, height: auto
+        A képek a kedvenc színészeid ábrázolják, a leírás pedig róluk tartalmazzon információt. 
+        A leírásban legyen egy link, amely a színész wikipedia oldalára mutat.
+ 
+        KIEGÉSZÍTÉS:
+        - A kép legyen 50%-kal lekerekítve
+        - A kép kapjon 20px belső margót mindenhol, 20px margót csak balról
+        - A kép melletti szöveg formázása legyen:
+            - dőlt stílusú,
+            - általatok választott, google font betűtípus, 300-as betűnagysággal
+ 
+    2. gyakorló feladat: Zenész választó
+    - 4 zenész képe egymás mellé elhelyezve, mindegyik egységes (pl. 200x300)
+    - Mindegyik ALATT megtalálható egy link, ami a zenész leírására mutat
+    - A linkek minden állapotukban eltérő színnel rendelkezzenek
+ 
+ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mooli&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Create the "relation" between HTML and CSS files -->
+    <link rel="stylesheet" href="./style3.css" />
+    <style>
+      #spec {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        <img
+          class="actor"
+          src="https://www.mafab.hu/static/profiles/2014p/293/04/273727_33.jpg"
+          alt="Mark Wahlberg"
+        />
+        <a>Mark Wahlberg</a>
+        <p class="text">
+          <a href="https://hu.wikipedia.org/wiki/Mark_Wahlberg"
+            >Mark Wahlberg</a
+          >
+          Oscar- és Golden Globe-díjra jelölt amerikai színész és televíziós
+          producer. Korábban Marky Mark néven vált ismertté 1991-es debütalbuma
+          révén, amin rapzenét adott elő a Marky Mark and the Funky Bunch
+          formációval.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Dwayne_Johnson_2%2C_2013.jpg/800px-Dwayne_Johnson_2%2C_2013.jpg"
+          alt="Dwayne Johnson"
+        />
+        <a>Dwayne Johnson</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Dwayne_Johnson"
+            >Dwayne Douglas Johnson</a
+          >
+          szamoai származású amerikai színész, producer, üzletember, testépítő
+          és visszavonult profi pankrátor.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://flxt.tmsimg.com/assets/57282_v9_bb.jpg"
+          alt="Ryan Reynolds"
+        />
+        <a>Ryan Reynolds</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Ryan_Reynolds"
+            >Ryan Rodney Reynolds</a
+          >
+          kanadai-amerikai színész, humorista, filmproducer és forgatókönyvíró.
+        </p>
+      </div>
+
+      <div>
+        <img
+          class="actor"
+          src="https://cdn.britannica.com/97/194197-050-5BD88874/Vin-Diesel-The-Fast-and-the-Furious.jpg"
+          alt="Vin Diesel"
+        />
+        <a>Vin Diesel</a>
+        <p>
+          <a href="https://hu.wikipedia.org/wiki/Vin_Diesel">Vin Diesel</a>
+          amerikai színész, producer és forgatókönyvíró. Szeret a vásznon igazi
+          „keményfiúkat” alakítani, de a drámai szerepek sem állnak messze tőle.
+        </p>
+      </div>
+    </section>
+    <!-- 2. TASK: -->
+    <br /><br /><br />
+    <section>
+      <div>
+        <img
+          class="musician"
+          src="https://cdns-images.dzcdn.net/images/artist/19cc38f9d69b352f718782e7a22f9c32/500x500.jpg"
+          alt="Eminem"
+        />
+
+        <img
+          class="musician"
+          src="https://m.media-amazon.com/images/M/MV5BMTM1NjExNjg1OV5BMl5BanBnXkFtZTcwMTQ0NzIwMw@@._V1_FMjpg_UX1000_.jpg"
+          alt="Michael Jackson"
+        />
+
+        <img
+          class="musician"
+          src="https://people.com/thmb/SJWsqYQR3XC9iPw1jyyoBtOKdP4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(699x334:701x336)/taylor-swift-voting-091923-tout-5b7053c6104a423f977cadba70616a29.jpg"
+          alt="Taylor Swift"
+        />
+
+        <img
+          class="musician"
+          src="https://cdn.britannica.com/69/82669-050-B3421191/Ray-Charles-Nashville-Tenn-2003.jpg"
+          alt="Ray Charles"
+        />
+      </div>
+      <span>
+        <a href="https://hu.wikipedia.org/wiki/Eminem">Eminem</a>
+      </span>
+      <span>
+        <a
+          href="https://hu.wikipedia.org/wiki/Michael_Jackson_(%C3%A9nekes,_1958%E2%80%932009)"
+          >Michael Jackson</a
+        >
+      </span>
+      <span>
+        <a href="https://hu.wikipedia.org/wiki/Taylor_Swift"
+          >Taylor Swift</a
+        ></span
+      >
+      <span>
+        <a href="https://hu.wikipedia.org/wiki/Ray_Charles"
+          >Ray Charles</a
+        ></span
+      >
+    </section>
+  </body>
+</html>
