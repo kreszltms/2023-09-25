@@ -9,3 +9,41 @@ html, body{
 h3{
     font-family: Arial, Arial, Helvetica, sans-serif;
 }
+
+.btn{
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    text-transform: uppercase;
+    /* CSS Flex */
+    display: flex;
+    /* Horizontally center align */
+    justify-content: center;
+    /* Vertically center align */
+    align-items: center;
+
+ }
+.btn-text{
+    margin-right: 4px;
+}
+.blue{
+    border: 1px solid #1686f0;
+    color: #1686f0;
+    background-color: #fff;
+}
+
+.blue:hover{
+    background-color: #1686f0;
+    color: #fff;
+}
+
+.red{
+    border: 1px solid red;
+    color: red;
+    background-color: #fff;
+}
+
+.red:hover{
+    background-color: red;
+    color: #fff;
+}
