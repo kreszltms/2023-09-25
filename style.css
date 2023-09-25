@@ -1,0 +1,39 @@
+/* Universal Selector --> Seletc every element
+Reference: https: //www.w3schools.com/cssref/css_selectors.php
+General Selector 
+
+    Dont use the * selector
+* {
+    font-size: 24px;
+}
+*/
+
+
+html,body{
+    font-size: 20px;
+}
+
+/* Selects every "p" element inside a div */
+/* Selects every "p" where div is parent */
+
+div p{
+    color: crimson;
+}
+
+/* Selects all "b" and all "u" elements */
+b, u{
+    color:darkorange
+}
+
+.important{
+    color:red
+}
+
+.dotted{
+    border: 2px dotted #ccc
+}
+
+#spec{
+    
+}
+/* Specific Selectors: .class #id */
