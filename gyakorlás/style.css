@@ -1,0 +1,43 @@
+img{
+    width: 200px;
+    border: 2px dashed #ccc
+}
+
+.countedlist{
+    font-weight: bold;
+}
+
+.improvement{
+    font-style: italic;
+}
+
+hr{
+    width: 70%;
+    margin-left: 0;
+    color: #0000FF;
+}
+
+.film{
+    border: 2px dotted black;
+}
+
+h2{
+    color: #0000FF;
+    text-align: center;
+}
+
+.div2{
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+
+#1{
+    text-align: left;
+    color: #808080;
+    opacity: 30%;
+    padding: 15px;
+    
+}

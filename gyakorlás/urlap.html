@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <style>
+      body {
+        color: grey;
+      }
+      textarea {
+        display: inline-block;
+      }
+      section {
+        text-align: center;
+      }
+      label {
+        width: 12%;
+        display: inline-block;
+        text-align: flex-start;
+      }
+      .submit {
+        background-color: orange;
+        color: white;
+        border-radius: 100%;
+        border: none;
+        height: 30px;
+        width: 90px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://i.imgur.com/dTTc08v.png" alt="kep" />
+    <section>
+      <div>
+        <label for="Name">Name</label>
+        <input type="text" name="Name" id="Name" placeholder="Your name" />
+      </div>
+      <br />
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Your e-mail" />
+      </div>
+      <div>
+        <br />
+        <label for="find">How did you find us?</label>
+        <select name="find" id="find">
+          <option value="Friends">Friends</option>
+          <option value="Family">Family</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="newsletter" start>Newsletter?</label>
+        <input
+          type="checkbox"
+          name="food"
+          value="newsletter"
+          id="newsletter"
+        />Yes, please
+      </div>
+      <div>
+        <label for="user-message">Drop us a line!</label>
+        <textarea
+          name="user-message"
+          id="user-message"
+          cols="20"
+          rows="5"
+          placeholder="Your message"
+        ></textarea>
+        <br />
+        <input type="submit" name="submit" value="Submit" class="submit" />
+      </div>
+    </section>
+  </body>
+</html>
